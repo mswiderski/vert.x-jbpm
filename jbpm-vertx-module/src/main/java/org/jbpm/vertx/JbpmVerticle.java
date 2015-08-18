@@ -58,7 +58,7 @@ public class JbpmVerticle extends Verticle {
 			unit.setStrategy(RuntimeStrategy.PER_PROCESS_INSTANCE);
 			unit.setDeploymentDescriptor(getDescriptor());
 			
-			if (deploymentService.isDeployed(containerToStart)){
+			if (!deploymentService.isDeployed(containerToStart)){
 			    deploymentService.deploy(unit);
 			}
 			

@@ -13,3 +13,4 @@ var eb = vertx.eventBus;
   eb.send('org.jbpm:receive-data:1.0', jsonMsg, function(reply) {
   console.log("Received reply: " + JSON.stringify(reply));
   });
+  console.log("Message sent");

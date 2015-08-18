@@ -43,7 +43,7 @@ if you run in managed mode you should see this instance in workbench as well.
 
 #### Start send data process
 ```
-vertx run start-receive-process.js -cluster -cluster-host localhost
+vertx run start-send-process.js -cluster -cluster-host localhost
 ```
 Now in the console that runs send-data vert.x instance you should see stuff happening and on the caller side information about process instance id,
 in addition to that on instance that runs receive-data you should see that message was received and instance was completed.
